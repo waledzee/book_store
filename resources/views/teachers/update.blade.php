@@ -18,34 +18,44 @@
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">ADD a new Teacher</h3>
+                <h3 class="card-title">update Teacher</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form method='post' action="{{route('store.teacher')}}" >
+              <form method='post' action="{{route('handle-tupdate')}}" >
                 @csrf
                 <div class="card-body">
-                 
+                  <label >teacher</label>
+
+                        <select class="form-control" name="tname" id="cars">
+                            @foreach($teachers as $teacher)
+                            <h1>{{$teacher->name}}</h1>
+                        <option value="{{$teacher->name}}">{{$teacher->name}}</option>
+                        @endforeach
+
+                        </select>
                   <div class="form-group">
                     <label >Name</label>
                     <input type="text"  name="name" class="form-control"  placeholder="Enter Theacher's name">
                   </div>
                   <div class="form-group">
-                    <label >Class</label>
+                   
+                  <label >Course</label>
 
                         <select class="form-control" name="title" id="cars">
                             @foreach($courses as $course)
                             <h1>{{$course->title}}</h1>
-                        <option value="{{$course->title}}">{{$course->title}}</option>
+                          <option value="{{$course->title}}">{{$course->title}}</option>
                         @endforeach
 
                         </select>
+                   
                   </div>
                 </div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary">Update</button>
                 </div>
               </form>
             </div>

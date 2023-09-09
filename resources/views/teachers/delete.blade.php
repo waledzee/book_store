@@ -18,25 +18,22 @@
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">ADD a new Teacher</h3>
+                <h3 class="card-title">Delete Teacher</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form method='post' action="{{route('store.teacher')}}" >
+              <form method='post' action="{{route('handleTdelete')}}" >
                 @csrf
                 <div class="card-body">
                  
+                  
                   <div class="form-group">
-                    <label >Name</label>
-                    <input type="text"  name="name" class="form-control"  placeholder="Enter Theacher's name">
-                  </div>
-                  <div class="form-group">
-                    <label >Class</label>
+                    <label >Teacher's name</label>
 
-                        <select class="form-control" name="title" id="cars">
-                            @foreach($courses as $course)
-                            <h1>{{$course->title}}</h1>
-                        <option value="{{$course->title}}">{{$course->title}}</option>
+                        <select class="form-control" name="name" id="cars">
+                            @foreach($teachers as $teacher)
+                            <h1>{{$teacher->name}}</h1>
+                        <option value="{{$teacher->name}}">{{$teacher->name}}</option>
                         @endforeach
 
                         </select>
@@ -45,7 +42,7 @@
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary">delete</button>
                 </div>
               </form>
             </div>

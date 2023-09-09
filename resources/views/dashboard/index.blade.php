@@ -213,71 +213,37 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <a href="{{route('addclass')}}" class="nav-link">
+                  
                   <p>
                    Add Class
                     <i class="fas fa-angle-left right"></i>
                   </p>
                 </a>
+              
+              
+                </ul>
+
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="pages/examples/login.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
+                    <a href="{{route('delete_form')}}" class="nav-link">
+                    <i class="fas fa-angle-left right"></i>
                       <p>Delete Class</p>
                     </a>
                   </li>
-              
-                </ul>
+                  </ul>
+                  <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{{route('update_form')}}" class="nav-link">
+                    <i class="fas fa-angle-left right"></i>
+                      <p>Edit Class</p>
+                    </a>
+                  </li>
+                  
               </li>
 
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    Login & Register v2
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="pages/examples/login-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Login v2</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/register-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Register v2</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/forgot-password-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Forgot Password v2</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/recover-password-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Recover Password v2</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/lockscreen.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>update class</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/lockscreen.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Lockscreen</p>
-                </a>
-              </li>
+            
+              
               
        
        
@@ -324,6 +290,101 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>
                    Edit User
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+              </li>
+
+              </ul>
+             
+
+              <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-plus-square"></i>
+              <p>
+                Teachers
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('create.teacher')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                   Add Teacher
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+               
+              
+                </ul>
+                <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('delete_teacher')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                   Delete Teacher
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+              </li>
+
+           
+              </ul>
+
+              <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('update_teacher')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                   Edit Teacher
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+              </li>
+
+              </ul>
+
+              <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-plus-square"></i>
+              <p>
+                Teachers
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                   Add Teacher
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+               
+              
+                </ul>
+                <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                   Delete Teacher
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+              </li>
+
+           
+              </ul>
+
+              <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                   Edit Teacher
                     <i class="fas fa-angle-left right"></i>
                   </p>
                 </a>

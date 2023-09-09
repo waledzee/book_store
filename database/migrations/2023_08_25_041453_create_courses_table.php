@@ -19,7 +19,7 @@ return new class extends Migration
                 $table->string('desc')->nullable();
                 $table->string('Age_of_kids')->nullable();
                 $table->integer('seats')->nullable();
-                $table->string('fees')->nullable();
+                $table->int('fees')->nullable();
                 $table->string('img')->nullable();
                 $table->dateTime('class_time')->nullable();
                 $table->timestamps();

@@ -55,13 +55,21 @@ Route::get('/contact', function () {
 })->name('contact');
 
 
-Route::get('/createclass', function () {
-    return view('classes.create');
-})->name('form');
+Route::get('/createclass', [CourseController::class, 'show_add'])->name('addclass');
 
 
 Route::get('/class', [CourseController::class,'classes'])->name('class');
 Route::post('/s-course',[CourseController::class,'store'])->name('StoreCourse');
+
+
+Route::get('/delete-form', [CourseController::class,'delete_form'])->name('delete_form');
+
+Route::post('/delete-class', [CourseController::class,'delete_class'])->name('delete_class');
+
+Route::get('/update-form', [CourseController::class,'update_form'])->name('update_form');
+
+Route::post('/update-class', [CourseController::class,'update_class'])->name('update_class');
+
 
 
 
@@ -73,8 +81,16 @@ Route::prefix('/dashboard')->group(function () {
     Route::get('/n-teacher', [TeacherController::class,'create'])->name('create.teacher');
     Route::post('/handle-teacher', [TeacherController::class,'store'])->name('store.teacher');
 
+    Route::get('/d-teacher', [TeacherController::class,'delete'])->name('delete_teacher');
+
+   Route::post('/handle-dteacher', [TeacherController::class,'handle_Tdelete'])->name('handleTdelete');
+
     Route::get('/n-img', [GalleryController::class,'create'])->name('create.gallery');
     Route::post('/handle-img', [GalleryController::class,'store'])->name('store.gallery');
+
+
+    Route::get('/update-teacher', [TeacherController::class,'update'])->name('update_teacher');
+    Route::post('/handeleupdate-teachers', [TeacherController::class,'handle_update'])->name('handle-tupdate');  
 
 
 });
